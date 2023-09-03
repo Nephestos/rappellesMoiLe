@@ -1,2 +1,2 @@
 # rappellesMoiLe
-Petit site en angular permettant de progresser en angular et de présenter la méthode de Leitner 
+Petit site en angular présentant la méthode de Leitner et améliorant mes compétences en Angualar 
