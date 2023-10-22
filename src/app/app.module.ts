@@ -9,11 +9,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { CardComponent } from './card/card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +26,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
-
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

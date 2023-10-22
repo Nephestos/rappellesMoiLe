@@ -1,23 +1,52 @@
 
 
-  .test {
-    width: 90px;
-    margin: auto;
+.matCard {
+  width: 10%;
+  height: 10%
+}
+
+.main > .matCard {
+  width: 10%;
+  height: 10%;
+}
+
+.main{
+  display: flex;
+  height: 90%;
+  height: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin : auto;
+  width: 100%;
+  text-align: center;
+  }
+  .mat-icon {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
   }
 
-  .main{
-    align-items: center;
+  .buttonColor {
+    padding: 10px;
+    color: white;   
+    background-color: blue;
+    border-radius:100px;
+}
+  /**
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    margin : auto;
-    width: 100%;
-    text-align: center;
-    }
-    .mat-icon {
-      font-size: 50px;
-      height: 50px ;
-      width: 50px;
-      color: blue;
-    }
+
+  
+
+.mat-mdc-icon-button.mat-custom-color {
+    color: #17d1bf;   
+    background-color: #cc2445;
+}  
+**/
