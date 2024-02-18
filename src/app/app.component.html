@@ -6,12 +6,25 @@
       <ng-container #container class="cardDisplay"> </ng-container>
     </div>
     <div class="footer" >
-        <button class="button" (click)="addCard()">
+        <button class="button" (click)="open(content)">
           <mat-icon>add_circle_outline</mat-icon>
         </button>
     </div>
   </div>
 </ng-container>
          
- 
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+	</div>
+</ng-template>
  

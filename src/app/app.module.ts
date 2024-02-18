@@ -11,8 +11,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { CardComponent } from './card/card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NO_ERRORS_SCHEMA } from '@angular/compiler';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { CommonModule } from '@angular/common';
     MatToolbarModule,
     MatIconModule,
     FlexLayoutModule,
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   bootstrap: [AppComponent],
   schemas: [
