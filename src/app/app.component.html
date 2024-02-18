@@ -1,20 +1,17 @@
 
 
-
-<mat-sidenav-container fullscreen>
+<ng-container >
   <div class="main">
-    <div fxLayout="row wrap">
-      <div fxFlex="25%" >
-        
-     <card-component class="matCard"/>
-     
-      </div>
+      <div class ="containerCard">
+      <ng-container #container class="cardDisplay"> </ng-container>
+    </div>
+    <div class="footer" >
+        <button class="button" (click)="addCard()">
+          <mat-icon>add_circle_outline</mat-icon>
+        </button>
     </div>
   </div>
-  <div class="footer" >
-      <button class="buttonColor" color="accent" (click)="addCard()">
-        <mat-icon>add_circle_outline</mat-icon>
-      </button>
-  </div>
+</ng-container>
+         
  
-  </mat-sidenav-container>
+ 

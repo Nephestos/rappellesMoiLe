@@ -1,18 +1,23 @@
 
-
-.matCard {
-  width: 10%;
-  height: 10%
-}
-
-.main > .matCard {
-  width: 10%;
-  height: 10%;
-}
-
+/**
 .main{
-  display: flex;
+  display: ird;
   height: 90%;
+  width: 90%;
+}
+*/
+.containerCard {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px; 
+}
+
+.cardDisplay {
+  min-width: 50px;
+  width: 25%;
+  margin: 20px;
+  min-height: 75px;
   height: 100%;
 }
 
@@ -22,21 +27,46 @@
   margin : auto;
   width: 100%;
   text-align: center;
-  }
-  .mat-icon {
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-  }
+  padding: 25px;
 
-  .buttonColor {
-    padding: 10px;
-    color: white;   
-    background-color: blue;
-    border-radius:100px;
+
+}
+
+.mat-icon {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+.button { 
+  padding: 10px;
+  color: white; 
+  background-image: linear-gradient(to right,blue 0%, pink 100%);
+
+  //background-color: aqua;
+  border-radius:100px;
+  transition: 0.5s;
+  border : none;
+  background-size: 125% auto;
+  box-shadow: 0 0 20px #eee;
+  
+}
+
+.button:hover {
+  border: solid;
+  border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;    
+    border: 2px solid #000000;
+/* width | style */
+  border: 50px;
+  background-position: right center; /* Green */
+  color: blue;
+  text-decoration : none
 }
   /**
   .example-button-row .mat-mdc-button-base {
@@ -50,3 +80,44 @@
     background-color: #cc2445;
 }  
 **/
+
+.button1 {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.button1:hover {
+  background-position: right; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+ .btn-grad {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
